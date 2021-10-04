@@ -35,6 +35,11 @@ body {
   text-align: center;
 }
 
+.titleOfApp {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* 
 .App-logo {
   height: 40vmin;

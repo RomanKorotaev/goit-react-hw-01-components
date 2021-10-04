@@ -9,23 +9,32 @@ function StatisticsList({title,  stats}) {
             <section className="s.statisticsList">
                 { title && <h2 className={s.title}>{title}</h2> }
 
-                <ul className="s.stat-list">
+                <ul className="s.stat__list">
                     {stats.map( (item) => (
                                 <Statistics 
                                     key={item.id}
-                                    labe={item.labe}
+                                    label={item.label}
                                     percentage={item.percentage}
                                  />
-                                ))}
+                                ))}  
                 </ul>
             </section>
         )
 }
 
+
 StatisticsList.propTypes = {
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string,
-    stats: PropTypes.string.isRequired
-}
+  title: PropTypes.string,
+  // Массив объектов конкретного типа использую там, где MAP
+  stats: PropTypes.arrayOf(
+    // Объект с определённой структурой
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
+};
+
 
 export default StatisticsList;
