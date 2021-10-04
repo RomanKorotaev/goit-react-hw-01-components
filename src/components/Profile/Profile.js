@@ -25,16 +25,16 @@ function Profile (props) {
     <p className={s.location}>{location}</p>
   </div>
 
-                <ul className={s.stats}>
-    <li>
+    <ul className={s.stats}>
+    <li  className={s.items}>
         <span className={s.label}>Followers </span>
         <span className={s.quantity}>{stats.followers}</span>
     </li>
-    <li>
+    <li className={s.items}>
         <span className={s.label}>Views </span>
         <span className={s.quantity}>{stats.views}</span>
     </li>
-    <li>
+    <li className={s.items}>
         <span className={s.label}>Likes </span>
         <span className={s.quantity}>{stats.likes}</span>
     </li>

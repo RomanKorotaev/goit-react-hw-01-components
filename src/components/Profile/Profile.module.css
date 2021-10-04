@@ -1,39 +1,82 @@
 .profile {
-  background-color: rgb(160, 183, 236);
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 3px solid rgb(96, 98, 235);
+  background-color: rgb(206, 240, 224);
+  display: inline-block;
+  margin-top: 40px;
+  padding-top: 40px;
+  border: 1px solid rgb(4, 58, 12);
+  border-radius: 15px;
 
   width: 500px;
   height: auto;
 
   margin: 0 auto;
 
-  font-family: "Ephesis", cursive;
-  font-size: 30px;
+  box-shadow: 10px 5px 5px black;
 }
 
 .description {
 }
 
 .avatar {
+  width: 250px;
+  height: inherit;
+
+  border: 1px solid rgb(4, 58, 12);
+  border-radius: 50%;
 }
 
 .name {
+  /* font-family: "Ephesis", cursive; */
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .tag {
+  margin-bottom: 20px;
 }
 
 .location {
+  font-family: "Ephesis", cursive;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .stats {
+  display: flex;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  list-style: none;
+  justify-content: space-around;
+  background-color: rgb(226, 226, 226);
+
+  /* border-top: 1px solid rgb(4, 58, 12); */
+  border-radius: 0px 0px 15px 15px;
 }
 
 .label {
+  margin-bottom: 5px;
 }
 
 .quantity {
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+
+  border: 1px solid rgb(4, 58, 12);
+}
+
+.items:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+.items:last-child {
+  border-bottom-right-radius: 15px;
 }
