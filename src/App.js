@@ -4,9 +4,12 @@ import './App.css';
 import Profile from './components/Profile/Profile';
 import user from './db/user.json'
 
-// import Friends from '../friends.json';
-// import StatisticalData from '../statistical-data.json';
-// import Transactions from '../transactions.json'
+import StatisticsList from './components/StatisticsList'
+import statisticalData from './db/statistical-data.json';
+
+import friends from './db/friends.json';
+
+import transactions from './db/transactions.json'
 
 
 
@@ -20,7 +23,20 @@ function App() {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats} 
-      />
+          />
+          
+          <p> Задание 2 - Секция статистики </p>
+          
+          {/* <StatisticsList
+              tiile={ title}
+              id={statisticalData.id}
+              label={statisticalData.label}
+              percentage={statisticalData.percentage}
+          /> */}
+
+          <StatisticsList title="Upload stats" stats={statisticalData} />
+          {/* <StatisticsList stats={statisticalData} /> */}
+          
     </div>
   );
 }
