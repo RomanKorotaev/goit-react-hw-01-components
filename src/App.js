@@ -7,6 +7,7 @@ import user from './db/user.json'
 import Statistics from './components/Statistics/Statistics'
 import statisticalData from './db/statistical-data.json';
 
+import FriendList from './components/FriendList/FriendList'
 import friends from './db/friends.json';
 
 import transactions from './db/transactions.json'
@@ -27,14 +28,18 @@ function App() {
                 />
           </section>
           
-            <section>
-                
-            <p  className="titleOfApp"> Задание 2 - Секция статистики </p>
+            <section>             
+              <p  className="titleOfApp"> Задание 2 - Секция статистики </p>
             
-        
-            <Statistics title="Upload stats" stats={statisticalData} />
-            <Statistics stats={statisticalData} /> 
-            </section>
+              <Statistics title="Upload stats" stats={statisticalData} />
+              <Statistics stats={statisticalData} /> 
+      </section>
+      
+      <section>             
+              <p  className="titleOfApp"> Задание 3 - Список друзей </p>
+              <FriendList friends={friends} />
+      </section>
+      
     </div>
   );
 }
