@@ -10,9 +10,10 @@ function FriendListItem(props) {
 
     return (
             <li className={s.item}>
-            <span className={s.status}>{isOnline}</span>
+            <span className={s.status}> {isOnline  ? 'OnLine ' : 'OffLine!!! ' }</span>
+                
             <img className={s.avatar} src={avatar} alt={name} width="48" />
-            <p class="name"> {name }</p>
+                <p class="name"> {name}</p>
             </li>
             )
  }
@@ -21,7 +22,7 @@ function FriendListItem(props) {
 FriendListItem.propTypes = {
    avatar: PropTypes.string.isRequired,
    name: PropTypes.string.isRequired,
-   isOnline: PropTypes.bool.isRequired
+//    isOnline: PropTypes.bool.isRequired
   }
 
 
