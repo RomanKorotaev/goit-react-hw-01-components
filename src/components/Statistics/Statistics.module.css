@@ -1,0 +1,27 @@
+.statistics {
+  border: 1px solid rgb(4, 58, 12);
+  border-radius: 15px;
+
+  width: 500px;
+  height: auto;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  box-shadow: 10px 5px 5px black;
+}
+
+.title {
+  background-color: rgb(206, 240, 224);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.stat_list {
+  display: flex;
+  list-style: none;
+  background-color: rgb(226, 226, 226);
+
+  border-radius: 0px 0px 15px 15px;
+}

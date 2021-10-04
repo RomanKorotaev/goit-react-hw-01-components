@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 
 
+
 function Profile (props) {
       const {
         name,
@@ -26,15 +27,15 @@ function Profile (props) {
   </div>
 
     <ul className={s.stats}>
-    <li  className={s.items}>
+    <li  className={s.item}>
         <span className={s.label}>Followers </span>
         <span className={s.quantity}>{stats.followers}</span>
     </li>
-    <li className={s.items}>
+    <li className={s.item}>
         <span className={s.label}>Views </span>
         <span className={s.quantity}>{stats.views}</span>
     </li>
-    <li className={s.items}>
+    <li className={s.item}>
         <span className={s.label}>Likes </span>
         <span className={s.quantity}>{stats.likes}</span>
     </li>

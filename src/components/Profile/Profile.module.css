@@ -1,7 +1,6 @@
 .profile {
   background-color: rgb(206, 240, 224);
-  display: inline-block;
-  margin-top: 40px;
+
   padding-top: 40px;
   border: 1px solid rgb(4, 58, 12);
   border-radius: 15px;
@@ -10,6 +9,7 @@
   height: auto;
 
   margin: 0 auto;
+  margin-top: 32px;
 
   box-shadow: 10px 5px 5px black;
 }
@@ -62,7 +62,7 @@
 .quantity {
 }
 
-.items {
+.item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,10 +73,10 @@
   border: 1px solid rgb(4, 58, 12);
 }
 
-.items:first-child {
+.item:first-child {
   border-bottom-left-radius: 15px;
 }
 
-.items:last-child {
+.item:last-child {
   border-bottom-right-radius: 15px;
 }

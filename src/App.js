@@ -4,7 +4,7 @@ import './App.css';
 import Profile from './components/Profile/Profile';
 import user from './db/user.json'
 
-import StatisticsList from './components/StatisticsList/StatisticsList'
+import Statistics from './components/Statistics/Statistics'
 import statisticalData from './db/statistical-data.json';
 
 import friends from './db/friends.json';
@@ -32,8 +32,8 @@ function App() {
             <p  className="titleOfApp"> Задание 2 - Секция статистики </p>
             
         
-            <StatisticsList title="Upload stats" stats={statisticalData} />
-            <StatisticsList stats={statisticalData} /> 
+            <Statistics title="Upload stats" stats={statisticalData} />
+            <Statistics stats={statisticalData} /> 
             </section>
     </div>
   );

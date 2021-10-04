@@ -1,24 +1,41 @@
+import s from './Statistics.module.css'
 
-import s  from './Statistics.css'
 import PropTypes from 'prop-types';
+import StatisticItem from '../StatisticItem/StatisticItem'
 
 
-function Statistics (props) {
-      const {
-        label,
-        percentage} = props;
-
+function Statistics({title,  stats}) {
+     
         return (
-            <li className={s.item}>
-                <span classNam={s.label}>{label}</span>
-                <span classNam={s.percentage}>{percentage}</span>
-            </li>
+            <section className={s.statistics}>
+                { title && <h2 className={s.title}>{title}</h2> }
+
+                <ul className={s.stat_list}>
+                    {stats.map( (item) => (
+                                <StatisticItem 
+                                    key={item.id}
+                                    label={item.label}
+                                    percentage={item.percentage}
+                                 />
+                                ))}  
+                </ul>
+            </section>
         )
 }
 
+
 Statistics.propTypes = {
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired
-}
+  title: PropTypes.string,
+  // Массив объектов конкретного типа использую там, где MAP
+  stats: PropTypes.arrayOf(
+    // Объект с определённой структурой
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
+};
+
 
 export default Statistics;
