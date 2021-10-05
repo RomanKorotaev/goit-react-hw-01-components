@@ -5,9 +5,9 @@ import Transaction from '../Transaction/Transaction'
 
 function TransactionHistory({ items }) {
     return (
-        <table class="transaction-history">
+        <table className={s.transaction_history}>
   <thead>
-    <tr>
+    <tr className={s.headerTbl}>
       <th>Type</th>
       <th>Amount</th>
       <th>Currency</th>

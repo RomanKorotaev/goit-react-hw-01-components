@@ -1,0 +1,15 @@
+.transaction_history {
+  /* background-color: rgb(102, 168, 170); */
+  margin: 0 auto;
+
+  width: 500px;
+  border: 1px solid rgb(4, 58, 12);
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.headerTbl {
+  background-color: cadetblue;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}

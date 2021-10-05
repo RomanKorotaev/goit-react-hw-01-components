@@ -9,7 +9,7 @@ function Transaction(props) {
     } = props;
 
     return (
-        <tr>
+        <tr className={s.item }>
             <td>{ type }</td>
             <td>{ amount }</td>
             <td>{currency}</td>
