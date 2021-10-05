@@ -1,13 +1,12 @@
 .statistics {
-  border: 1px solid rgb(4, 58, 12);
-  border-radius: 15px;
-
   width: 500px;
   height: auto;
 
   margin: 0 auto;
   margin-bottom: 20px;
 
+  border: 1px solid rgb(4, 58, 12);
+  border-radius: 15px;
   box-shadow: 10px 5px 5px black;
 }
 

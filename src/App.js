@@ -39,6 +39,11 @@ function App() {
               <p  className="titleOfApp"> Задание 3 - Список друзей </p>
               <FriendList friends={friends} />
       </section>
+
+       <section>             
+              <p  className="titleOfApp"> Задание 4 - История транзакций </p>
+              <FriendList friends={friends} />
+      </section>
       
     </div>
   );

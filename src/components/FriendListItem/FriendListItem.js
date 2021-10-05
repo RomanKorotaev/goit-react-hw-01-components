@@ -5,15 +5,15 @@ function FriendListItem(props) {
     const {
         avatar,
         name,
-        isOnline
+       status
     } = props;
 
     return (
             <li className={s.item}>
-            <span className={s.status}> {isOnline  ? 'OnLine ' : 'OffLine!!! ' }</span>
-                
+            {/* <span className={status ? s.onLine : s.offLine}> {status ? ('OnLine') : ( 'OffLine!') }</span>              */}
+            <span className={status ? s.onLine : s.offLine}></span> 
             <img className={s.avatar} src={avatar} alt={name} width="48" />
-                <p class="name"> {name}</p>
+            <p className={s.name}> {name}</p>
             </li>
             )
  }
@@ -22,7 +22,7 @@ function FriendListItem(props) {
 FriendListItem.propTypes = {
    avatar: PropTypes.string.isRequired,
    name: PropTypes.string.isRequired,
-//    isOnline: PropTypes.bool.isRequired
+   isOnline: PropTypes.bool.isRequired
   }
 
 

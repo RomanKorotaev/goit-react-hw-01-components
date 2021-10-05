@@ -45,13 +45,10 @@
 
 .stats {
   display: flex;
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
   list-style: none;
   justify-content: space-around;
   background-color: rgb(226, 226, 226);
 
-  /* border-top: 1px solid rgb(4, 58, 12); */
   border-radius: 0px 0px 15px 15px;
 }
 
