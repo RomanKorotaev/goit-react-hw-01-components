@@ -10,6 +10,7 @@ import statisticalData from './db/statistical-data.json';
 import FriendList from './components/FriendList/FriendList'
 import friends from './db/friends.json';
 
+import TransactionHistory from './components/TransactionHistory/TransactionHistory'
 import transactions from './db/transactions.json'
 
 
@@ -42,7 +43,7 @@ function App() {
 
        <section>             
               <p  className="titleOfApp"> Задание 4 - История транзакций </p>
-              <FriendList friends={friends} />
+              <TransactionHistory items={transactions} />
       </section>
       
     </div>
